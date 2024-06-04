@@ -28,6 +28,7 @@ export const register = async (req, res) => {
       email: savedUser.email,
       createdAt: savedUser.createdAt,
       updatedAt: savedUser.updatedAt,
+      token: accessToken,
     })
 
   } catch (error) {
