@@ -84,9 +84,9 @@ export const verifyToken = async (req, res) => {
     })
 
     const userFound = await User.findOne({ _id: tokenUser.id })
-    // console.log("USERFOUND", userFound);
+    console.log("USERFOUND", userFound);
     res.status(200).json({
-      id: userFound._id,
+      id: userFound.id,
       userName: userFound.username,
       email: userFound.email
     })
