@@ -96,6 +96,7 @@ export const verifyToken = async (req, res) => {
       })
     }
   } catch (error) {
+    console.log("TOKEN", token);
     console.log(error);
   }
 
