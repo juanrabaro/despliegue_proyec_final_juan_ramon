@@ -16,4 +16,4 @@ EXPOSE 4000
 CMD ["npm", "run", "dev"]
 
 # docker build -f ./Dockerfile -t expressdocker .
-# docker run -p 3000:3000 expressdocker
+# docker run -p 4000:3000 expressdocker
